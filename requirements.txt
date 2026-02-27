@@ -1,0 +1,10 @@
+tqdm
+openai>=1.0.0
+aiohttp
+beautifulsoup4
+readabilipy
+trafilatura
+datasets
+numpy
+nltk
+requests

@@ -1,0 +1,34 @@
+outputs/
+evolve/
+LLaMA-Factory/
+geo_results_qwen-32b_ecommerce_train.json
+geo_results_qwen-32b_msdata_train.json
+geo_results_qwen-32b_train_with_sources.json
+geo_results_qwen-32b_geobench_train.json
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

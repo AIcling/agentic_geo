@@ -1,0 +1,2464 @@
+{
+  "strategies": [
+    {
+      "genotype_id": "5d3961d32edf0ce5",
+      "strategy_type": "authoritative",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Keep source length and structure similar; Do not fabricate quotes or citations; Maintain paragraph structure and line breaks\nStyle: academic, well-sourced",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Keep source length and structure similar\n- Do not fabricate quotes or citations\n- Maintain paragraph structure and line breaks\n- Mark any hypothetical sources clearly\n- Add at most 10 new keywords\n- Insert keywords naturally within text\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\n\nConflict resolution: When authority conflicts with accessibility, use confident language with clear examples\n## Style & Tone\nTarget style: academic, well-sourced\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1796413009557845
+      },
+      "fitness": 0.851875,
+      "genotype": {
+        "strategy_type": "authoritative",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Do not fabricate quotes or citations",
+            "Maintain paragraph structure and line breaks",
+            "Mark any hypothetical sources clearly",
+            "Add at most 10 new keywords",
+            "Insert keywords naturally within text"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": "When authority conflicts with accessibility, use confident language with clear examples",
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "academic",
+            "well-sourced"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "5d3961d32edf0ce5",
+        "parent_ids": [
+          "264ed76f9391e0f7",
+          "2bea27ce629f4100"
+        ],
+        "operators_applied": [
+          "mut_F_add_plan_then_write",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_add_selfcheck",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_F_schema_swap",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_T_toggle_simple",
+          "cx_swap_C",
+          "mut_T_toggle_simple",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_F_schema_swap",
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "cx_swap_I",
+          "cx_swap_C",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "cx_merge_C_union",
+          "mut_T_toggle_technical",
+          "mut_C_add_selfcheck",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis"
+        ],
+        "generation": 6,
+        "fitness": 0.851875,
+        "eval_count": 5,
+        "total_fitness": 4.259375,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "e3a9d5441b1b1b59",
+      "strategy_type": "seo_optimize",
+      "short_prompt": "Strategy: Add NEW SEO-relevant keywords to improve visibility\nConstraints: Do not fabricate quotes or citations; Preserve the original information; Keep the language clear and engaging\nStyle: keyword-optimized, technical\nSteps: Identify relevant keyword opportunities → Map keywords to specific sentences",
+      "full_prompt": "## Objective\nYou are a SEO specialist.\nYour goal is to: Add NEW SEO-relevant keywords to improve visibility\nScope: Modify at the sentence level\n## Constraints\n- Do not fabricate quotes or citations\n- Preserve the original information\n- Keep the language clear and engaging\n- Do not add or remove any core information\n- Ensure smooth sentence flow\n- Keep the structure and formatting identical\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify relevant keyword opportunities\n  2. Map keywords to specific sentences\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: keyword-optimized, technical\nBe: technically precise\n## Output Format\nFirst: List: 'In sentence about X, add keyword Y'\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.177552199402197
+      },
+      "fitness": 0.56875,
+      "genotype": {
+        "strategy_type": "seo_optimize",
+        "instruction": {
+          "goal": "Add NEW SEO-relevant keywords to improve visibility",
+          "role": "SEO specialist",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Do not fabricate quotes or citations",
+            "Preserve the original information",
+            "Keep the language clear and engaging",
+            "Do not add or remove any core information",
+            "Ensure smooth sentence flow",
+            "Keep the structure and formatting identical"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify relevant keyword opportunities",
+            "Map keywords to specific sentences"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "List: 'In sentence about X, add keyword Y'",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "keyword-optimized",
+            "technical"
+          ],
+          "assertive": false,
+          "technical_density": "high",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "e3a9d5441b1b1b59",
+        "parent_ids": [
+          "e88051c6c5053cb4",
+          "ef8580f75dca0ba5"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_technical",
+          "mut_T_toggle_assertive",
+          "cx_swap_C",
+          "mut_C_relax",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_C",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 4,
+        "fitness": 0.56875,
+        "eval_count": 3,
+        "total_fitness": 1.70625,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "614989d8aa1259b7",
+      "strategy_type": "seo_optimize",
+      "short_prompt": "Strategy: Add NEW SEO-relevant keywords to improve visibility\nConstraints: Keep source length and structure similar; Include about 5-6 relevant citations; Citations must be from verifiable or clearly hypothetical sources\nStyle: assertive, expert, confident\nSteps: Identify relevant keyword opportunities → Map keywords to specific sentences",
+      "full_prompt": "## Objective\nYou are a SEO specialist.\nYour goal is to: Add NEW SEO-relevant keywords to improve visibility\nScope: Modify at the sentence level\n## Constraints\n- Keep source length and structure similar\n- Include about 5-6 relevant citations\n- Citations must be from verifiable or clearly hypothetical sources\n- Mark any hypothetical sources clearly\n- Before outputting, verify all constraints are satisfied\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify relevant keyword opportunities\n  2. Map keywords to specific sentences\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nFirst: List: 'In sentence about X, add keyword Y'\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.1705778919550927
+      },
+      "fitness": 0.5723958333333333,
+      "genotype": {
+        "strategy_type": "seo_optimize",
+        "instruction": {
+          "goal": "Add NEW SEO-relevant keywords to improve visibility",
+          "role": "SEO specialist",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Include about 5-6 relevant citations",
+            "Citations must be from verifiable or clearly hypothetical sources",
+            "Mark any hypothetical sources clearly",
+            "Before outputting, verify all constraints are satisfied"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify relevant keyword opportunities",
+            "Map keywords to specific sentences"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "List: 'In sentence about X, add keyword Y'",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "614989d8aa1259b7",
+        "parent_ids": [
+          "33fbbf12f14e77f3",
+          "d30feca23ab12756"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_technical",
+          "mut_T_toggle_assertive",
+          "cx_swap_C",
+          "mut_C_relax",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_C",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 2,
+        "fitness": 0.5723958333333333,
+        "eval_count": 3,
+        "total_fitness": 1.7171875,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "86dacaa80063795c",
+      "strategy_type": "seo_optimize",
+      "short_prompt": "Strategy: Add NEW SEO-relevant keywords to improve visibility\nConstraints: Keep source length and structure similar; Mark any hypothetical sources clearly; Add at most 10 new keywords\nStyle: assertive, expert, confident\nSteps: Identify relevant keyword opportunities → Map keywords to specific sentences",
+      "full_prompt": "## Objective\nYou are a SEO specialist.\nYour goal is to: Add NEW SEO-relevant keywords to improve visibility\nScope: Modify at the sentence level\n## Constraints\n- Keep source length and structure similar\n- Mark any hypothetical sources clearly\n- Add at most 10 new keywords\n- Must not reuse keywords already present\n- Insert keywords naturally within text\n- Preserve length and structure\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify relevant keyword opportunities\n  2. Map keywords to specific sentences\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nFirst: List: 'In sentence about X, add keyword Y'\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.167168444150542
+      },
+      "fitness": 0.679296875,
+      "genotype": {
+        "strategy_type": "seo_optimize",
+        "instruction": {
+          "goal": "Add NEW SEO-relevant keywords to improve visibility",
+          "role": "SEO specialist",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Mark any hypothetical sources clearly",
+            "Add at most 10 new keywords",
+            "Must not reuse keywords already present",
+            "Insert keywords naturally within text",
+            "Preserve length and structure"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify relevant keyword opportunities",
+            "Map keywords to specific sentences"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "List: 'In sentence about X, add keyword Y'",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "86dacaa80063795c",
+        "parent_ids": [
+          "614989d8aa1259b7",
+          "aedd379606e9ea91"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_technical",
+          "mut_T_toggle_assertive",
+          "cx_swap_C",
+          "mut_C_relax",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_C",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 6,
+        "fitness": 0.679296875,
+        "eval_count": 4,
+        "total_fitness": 2.7171875,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "90d72d9540198ace",
+      "strategy_type": "more_quotes",
+      "short_prompt": "Strategy: Add relevant quotes to make the content more convincing and vivid\nConstraints: Do not add or remove any core information; Keep the structure and formatting identical; Do not fabricate quotes or citations\nStyle: assertive, expert, confident\nSteps: Identify places where a short quote would strengthen the point → Insert concise, relevant quotes with proper attribution or clear hypothetical marking",
+      "full_prompt": "## Objective\nYou are a editor.\nYour goal is to: Add relevant quotes to make the content more convincing and vivid\nScope: Modify at the sentence level\n## Constraints\n- Do not add or remove any core information\n- Keep the structure and formatting identical\n- Do not fabricate quotes or citations\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify places where a short quote would strengthen the point\n  2. Insert concise, relevant quotes with proper attribution or clear hypothetical marking\n  3. Analyze the current structure and formatting\n  4. Identify key information that must be preserved\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.166546696459808
+      },
+      "fitness": 0.7606249999999999,
+      "genotype": {
+        "strategy_type": "more_quotes",
+        "instruction": {
+          "goal": "Add relevant quotes to make the content more convincing and vivid",
+          "role": "editor",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Do not add or remove any core information",
+            "Keep the structure and formatting identical",
+            "Do not fabricate quotes or citations"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify places where a short quote would strengthen the point",
+            "Insert concise, relevant quotes with proper attribution or clear hypothetical marking",
+            "Analyze the current structure and formatting",
+            "Identify key information that must be preserved"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "90d72d9540198ace",
+        "parent_ids": [
+          "1c8ea772a1056aa9"
+        ],
+        "operators_applied": [
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 6,
+        "fitness": 0.7606249999999999,
+        "eval_count": 5,
+        "total_fitness": 3.8031249999999996,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "1e8ffb1c91173333",
+      "strategy_type": "citing_credible",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Do not omit key information; Keep the length and structure similar; Avoid jargon and complex terms\nStyle: academic, well-sourced",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not omit key information\n- Keep the length and structure similar\n- Avoid jargon and complex terms\n- Before outputting, verify all constraints are satisfied\n- Before outputting, verify all constraints are satisfied\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: academic, well-sourced\nBe: simple and accessible\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.165811680374051
+      },
+      "fitness": 0.7416666666666667,
+      "genotype": {
+        "strategy_type": "citing_credible",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not omit key information",
+            "Keep the length and structure similar",
+            "Avoid jargon and complex terms",
+            "Before outputting, verify all constraints are satisfied",
+            "Before outputting, verify all constraints are satisfied"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "academic",
+            "well-sourced"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": true,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "1e8ffb1c91173333",
+        "parent_ids": [
+          "a72971a8a1583076",
+          "f77bea4af4fca80b"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_simple",
+          "mut_R_add_steps",
+          "mut_C_add_selfcheck",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "mut_T_toggle_technical",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_C",
+          "cx_conflict_synthesis",
+          "mut_R_conflict_resolver",
+          "cx_swap_T",
+          "cx_swap_I"
+        ],
+        "generation": 7,
+        "fitness": 0.7416666666666667,
+        "eval_count": 3,
+        "total_fitness": 2.225,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "271dad4c3fa07d08",
+      "strategy_type": "simple_language",
+      "short_prompt": "Strategy: Simplify using easy-to-understand language\nConstraints: Do not omit key information; Keep the length and structure similar; Avoid jargon and complex terms\nStyle: simple, clear, accessible\nSteps: Analyze the current structure and formatting",
+      "full_prompt": "## Objective\nYou are a accessibility expert.\nYour goal is to: Simplify using easy-to-understand language\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not omit key information\n- Keep the length and structure similar\n- Avoid jargon and complex terms\n- Before outputting, verify all constraints are satisfied\n- Keep bullet points and numbered lists intact\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Analyze the current structure and formatting\n\nConflict resolution: When authority conflicts with accessibility, use confident language with clear examples\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: simple, clear, accessible\n## Output Format\nFirst: First, list the specific changes you will make\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1645933361568586
+      },
+      "fitness": 0.968,
+      "genotype": {
+        "strategy_type": "simple_language",
+        "instruction": {
+          "goal": "Simplify using easy-to-understand language",
+          "role": "accessibility expert",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not omit key information",
+            "Keep the length and structure similar",
+            "Avoid jargon and complex terms",
+            "Before outputting, verify all constraints are satisfied",
+            "Keep bullet points and numbered lists intact"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Analyze the current structure and formatting"
+          ],
+          "conflict_resolution": "When authority conflicts with accessibility, use confident language with clear examples",
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": "First, list the specific changes you will make",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "simple",
+            "clear",
+            "accessible"
+          ],
+          "assertive": false,
+          "technical_density": "low",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "271dad4c3fa07d08",
+        "parent_ids": [
+          "8d6efe2e03a7dd6a"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_C_strengthen",
+          "cx_conflict_synthesis",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver"
+        ],
+        "generation": 7,
+        "fitness": 0.968,
+        "eval_count": 5,
+        "total_fitness": 4.84,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "61356775a57fcda2",
+      "strategy_type": "fluent",
+      "short_prompt": "Strategy: Rewrite to make content more fluent and engaging\nConstraints: Preserve the original information; Ensure smooth sentence flow; Keep the language clear and engaging\nStyle: academic, well-sourced\nSteps: Extract key elements → Restate for clarity",
+      "full_prompt": "## Objective\nYou are a professional writer.\nYour goal is to: Rewrite to make content more fluent and engaging\nScope: Rewrite the entire content\n## Constraints\n- Preserve the original information\n- Ensure smooth sentence flow\n- Keep the language clear and engaging\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Extract key elements\n  2. Restate for clarity\n  3. Review for tone\n  4. Self-check for consistency\n\nConflict resolution: When technical precision conflicts with simplicity, add brief parenthetical explanations\n## Style & Tone\nTarget style: academic, well-sourced\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1637560431995646
+      },
+      "fitness": 0.8083333333333332,
+      "genotype": {
+        "strategy_type": "fluent",
+        "instruction": {
+          "goal": "Rewrite to make content more fluent and engaging",
+          "role": "professional writer",
+          "scope": "full_text"
+        },
+        "constraint": {
+          "items": [
+            "Preserve the original information",
+            "Ensure smooth sentence flow",
+            "Keep the language clear and engaging"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Extract key elements",
+            "Restate for clarity",
+            "Review for tone",
+            "Self-check for consistency"
+          ],
+          "conflict_resolution": "When technical precision conflicts with simplicity, add brief parenthetical explanations",
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "academic",
+            "well-sourced"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "61356775a57fcda2",
+        "parent_ids": [
+          "08221d515bbefd40",
+          "2bea27ce629f4100"
+        ],
+        "operators_applied": [
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_F_add_plan_then_write",
+          "mut_T_toggle_assertive",
+          "cx_swap_T"
+        ],
+        "generation": 6,
+        "fitness": 0.8083333333333332,
+        "eval_count": 3,
+        "total_fitness": 2.425,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "4621cd61d74eb51d",
+      "strategy_type": "fluent",
+      "short_prompt": "Strategy: Rewrite to make content more fluent and engaging\nConstraints: Do not fabricate quotes or citations; Preserve the original information; Keep the language clear and engaging\nStyle: assertive, expert, confident",
+      "full_prompt": "## Objective\nYou are a professional writer.\nYour goal is to: Rewrite to make content more fluent and engaging\nScope: Rewrite the entire content\n## Constraints\n- Do not fabricate quotes or citations\n- Preserve the original information\n- Keep the language clear and engaging\n- Do not add or remove any core information\n- Ensure smooth sentence flow\n- Keep the structure and formatting identical\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1634155019438777
+      },
+      "fitness": 0.75,
+      "genotype": {
+        "strategy_type": "fluent",
+        "instruction": {
+          "goal": "Rewrite to make content more fluent and engaging",
+          "role": "professional writer",
+          "scope": "full_text"
+        },
+        "constraint": {
+          "items": [
+            "Do not fabricate quotes or citations",
+            "Preserve the original information",
+            "Keep the language clear and engaging",
+            "Do not add or remove any core information",
+            "Ensure smooth sentence flow",
+            "Keep the structure and formatting identical"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "4621cd61d74eb51d",
+        "parent_ids": [
+          "seed_fluent",
+          "seed_authoritative"
+        ],
+        "operators_applied": [
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver",
+          "mut_R_add_steps",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_C_add_selfcheck",
+          "mut_R_add_steps",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_assertive",
+          "mut_F_add_plan_then_write",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "mut_C_add_selfcheck",
+          "mut_C_add_selfcheck",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_F_add_plan_then_write",
+          "mut_C_add_selfcheck",
+          "mut_T_toggle_assertive",
+          "mut_F_schema_swap",
+          "mut_C_add_selfcheck",
+          "mut_F_add_plan_then_write",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "mut_C_add_selfcheck",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "cx_swap_T",
+          "mut_C_strengthen",
+          "cx_swap_C",
+          "mut_C_add_selfcheck",
+          "cx_swap_I",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_C_add_selfcheck",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_merge_C_union",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_technical"
+        ],
+        "generation": 1,
+        "fitness": 0.75,
+        "eval_count": 2,
+        "total_fitness": 1.5,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "0650d417bd3771f6",
+      "strategy_type": "authoritative",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Keep source length and structure similar; Do not fabricate quotes or citations; Mark any hypothetical sources clearly\nStyle: assertive, expert, confident\nSteps: Apply changes while maintaining coherence → Verify constraints are satisfied",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Keep source length and structure similar\n- Do not fabricate quotes or citations\n- Mark any hypothetical sources clearly\n- Preserve the original information\n- Before outputting, verify all constraints are satisfied\n- Do not add or remove any core information\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Apply changes while maintaining coherence\n  2. Verify constraints are satisfied\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nFirst: First, list the specific changes you will make\nOutput the result",
+      "scores": {
+        "total_score": 1.162868186544398
+      },
+      "fitness": 1.0,
+      "genotype": {
+        "strategy_type": "authoritative",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Do not fabricate quotes or citations",
+            "Mark any hypothetical sources clearly",
+            "Preserve the original information",
+            "Before outputting, verify all constraints are satisfied",
+            "Do not add or remove any core information"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Apply changes while maintaining coherence",
+            "Verify constraints are satisfied"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "prelude_then_text",
+          "prelude": "First, list the specific changes you will make",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "0650d417bd3771f6",
+        "parent_ids": [
+          "4672aad1cc89fb60",
+          "17dbf90d8aac6a74"
+        ],
+        "operators_applied": [
+          "mut_F_schema_swap",
+          "mut_T_toggle_technical",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "cx_swap_I",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "cx_conflict_synthesis",
+          "mut_R_conflict_resolver"
+        ],
+        "generation": 5,
+        "fitness": 1.0,
+        "eval_count": 2,
+        "total_fitness": 2.0,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "5fccf8b2056f8edf",
+      "strategy_type": "citing_credible",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Keep source length and structure similar; Mark any hypothetical sources clearly; Add at most 10 new keywords\nStyle: keyword-optimized",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Keep source length and structure similar\n- Mark any hypothetical sources clearly\n- Add at most 10 new keywords\n- Must not reuse keywords already present\n- Insert keywords naturally within text\n- Preserve length and structure\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: keyword-optimized\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.161747077333248
+      },
+      "fitness": 0.7263020833333332,
+      "genotype": {
+        "strategy_type": "citing_credible",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Mark any hypothetical sources clearly",
+            "Add at most 10 new keywords",
+            "Must not reuse keywords already present",
+            "Insert keywords naturally within text",
+            "Preserve length and structure"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "keyword-optimized"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "5fccf8b2056f8edf",
+        "parent_ids": [
+          "ef16a86a30ae2d6b",
+          "483db06f030e7a86"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_assertive",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "cx_swap_I",
+          "mut_R_add_steps",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_C_relax",
+          "mut_T_toggle_assertive",
+          "mut_C_relax",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "mut_C_add_selfcheck",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "cx_conflict_synthesis",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "cx_swap_C"
+        ],
+        "generation": 3,
+        "fitness": 0.7263020833333332,
+        "eval_count": 3,
+        "total_fitness": 2.17890625,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "25819e1429a79917",
+      "strategy_type": "seo_optimize",
+      "short_prompt": "Strategy: Add NEW SEO-relevant keywords to improve visibility\nConstraints: Keep source length and structure similar; Do not fabricate quotes or citations; Include about 5-6 relevant citations\nStyle: academic, well-sourced\nSteps: Identify relevant keyword opportunities → Map keywords to specific sentences",
+      "full_prompt": "## Objective\nYou are a SEO specialist.\nYour goal is to: Add NEW SEO-relevant keywords to improve visibility\nScope: Modify at the sentence level\n## Constraints\n- Keep source length and structure similar\n- Do not fabricate quotes or citations\n- Include about 5-6 relevant citations\n- Add at most 10 new keywords\n- Mark any hypothetical sources clearly\n- Insert keywords naturally within text\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify relevant keyword opportunities\n  2. Map keywords to specific sentences\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: academic, well-sourced\n## Output Format\nFirst: List: 'In sentence about X, add keyword Y'\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.1613411804864349
+      },
+      "fitness": 0.5723958333333333,
+      "genotype": {
+        "strategy_type": "seo_optimize",
+        "instruction": {
+          "goal": "Add NEW SEO-relevant keywords to improve visibility",
+          "role": "SEO specialist",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Do not fabricate quotes or citations",
+            "Include about 5-6 relevant citations",
+            "Add at most 10 new keywords",
+            "Mark any hypothetical sources clearly",
+            "Insert keywords naturally within text"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify relevant keyword opportunities",
+            "Map keywords to specific sentences"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "List: 'In sentence about X, add keyword Y'",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "academic",
+            "well-sourced"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "25819e1429a79917",
+        "parent_ids": [
+          "33fbbf12f14e77f3",
+          "d30feca23ab12756"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_technical",
+          "mut_T_toggle_assertive",
+          "cx_swap_C",
+          "mut_C_relax",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_C",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 2,
+        "fitness": 0.5723958333333333,
+        "eval_count": 3,
+        "total_fitness": 1.7171875,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "6f4ea2b346740512",
+      "strategy_type": "conflict_synthesis",
+      "short_prompt": "Strategy: Resolve conflicts between simplicity and technical density while keeping the core information intact\nConstraints: Preserve length and structure; Do not omit key information; Add at most 10 new keywords\nStyle: assertive, expert, confident\nSteps: Identify conflicting requirements → Add conflict resolution comments",
+      "full_prompt": "## Objective\nYou are a conflict resolver.\nYour goal is to: Resolve conflicts between simplicity and technical density while keeping the core information intact\nScope: Only adjust wording, keep structure\n## Constraints\n- Preserve length and structure\n- Do not omit key information\n- Add at most 10 new keywords\n- Insert keywords naturally within text\n- Do not fabricate quotes or citations\n- Before outputting, verify all constraints are satisfied\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify conflicting requirements\n  2. Add conflict resolution comments\n  3. Review for consistency\n\nConflict resolution: Add conflict resolution comments\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nOutput as a structured list",
+      "scores": {
+        "total_score": 1.160562773515397
+      },
+      "fitness": 1.0,
+      "genotype": {
+        "strategy_type": "conflict_synthesis",
+        "instruction": {
+          "goal": "Resolve conflicts between simplicity and technical density while keeping the core information intact",
+          "role": "conflict resolver",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Preserve length and structure",
+            "Do not omit key information",
+            "Add at most 10 new keywords",
+            "Insert keywords naturally within text",
+            "Do not fabricate quotes or citations",
+            "Before outputting, verify all constraints are satisfied"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify conflicting requirements",
+            "Add conflict resolution comments",
+            "Review for consistency"
+          ],
+          "conflict_resolution": "Add conflict resolution comments",
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "list",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "6f4ea2b346740512",
+        "parent_ids": [
+          "fd29b8532afc4f7a",
+          "2f33a48d251996d4"
+        ],
+        "operators_applied": [
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "cx_merge_C_union"
+        ],
+        "generation": 7,
+        "fitness": 1.0,
+        "eval_count": 1,
+        "total_fitness": 1.0,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "6f188c19a0a19232",
+      "strategy_type": "fluent",
+      "short_prompt": "Strategy: Rewrite to make content more fluent and engaging\nConstraints: Preserve the original information; Ensure smooth sentence flow; Keep the language clear and engaging\nStyle: fluent, clear, engaging\nSteps: Verify constraints are satisfied → Identify key information that must be preserved",
+      "full_prompt": "## Objective\nYou are a professional writer.\nYour goal is to: Rewrite to make content more fluent and engaging\nScope: Rewrite the entire content\n## Constraints\n- Preserve the original information\n- Ensure smooth sentence flow\n- Keep the language clear and engaging\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Verify constraints are satisfied\n  2. Identify key information that must be preserved\n  3. Apply changes while maintaining coherence\n\nConflict resolution: When length constraint conflicts with completeness, prioritize key information\n## Style & Tone\nTarget style: fluent, clear, engaging\nBe: engaging and interesting\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1601822793832732
+      },
+      "fitness": 0.875,
+      "genotype": {
+        "strategy_type": "fluent",
+        "instruction": {
+          "goal": "Rewrite to make content more fluent and engaging",
+          "role": "professional writer",
+          "scope": "full_text"
+        },
+        "constraint": {
+          "items": [
+            "Preserve the original information",
+            "Ensure smooth sentence flow",
+            "Keep the language clear and engaging"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Verify constraints are satisfied",
+            "Identify key information that must be preserved",
+            "Apply changes while maintaining coherence"
+          ],
+          "conflict_resolution": "When length constraint conflicts with completeness, prioritize key information",
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "fluent",
+            "clear",
+            "engaging"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": true
+        },
+        "genotype_id": "6f188c19a0a19232",
+        "parent_ids": [
+          "e7dbd616c6cbd869"
+        ],
+        "operators_applied": [
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver",
+          "mut_R_add_steps",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_C_add_selfcheck",
+          "mut_R_add_steps",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "cx_swap_T",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_assertive",
+          "mut_F_add_plan_then_write",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "mut_C_add_selfcheck",
+          "mut_C_add_selfcheck",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_F_add_plan_then_write",
+          "mut_C_add_selfcheck",
+          "mut_T_toggle_assertive",
+          "mut_F_schema_swap",
+          "mut_C_add_selfcheck",
+          "mut_F_add_plan_then_write",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "mut_C_add_selfcheck",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "cx_swap_T",
+          "mut_C_strengthen",
+          "cx_swap_C",
+          "mut_C_add_selfcheck",
+          "cx_swap_I",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_C_add_selfcheck",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "cx_merge_C_union",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_technical"
+        ],
+        "generation": 3,
+        "fitness": 0.875,
+        "eval_count": 4,
+        "total_fitness": 3.5,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "8b7c5042c74b7607",
+      "strategy_type": "stats_optimization",
+      "short_prompt": "Strategy: Add compelling statistics at relevant places\nConstraints: Keep source length and structure similar; Statistics must be relevant and contextually appropriate; Mark any hypothetical sources clearly\nStyle: data-driven, precise, simple\nSteps: Identify sentences that could benefit from quantitative support → Add relevant statistics inline within those sentences",
+      "full_prompt": "## Objective\nYou are a data analyst.\nYour goal is to: Add compelling statistics at relevant places\nScope: Modify at the sentence level\n## Constraints\n- Keep source length and structure similar\n- Statistics must be relevant and contextually appropriate\n- Mark any hypothetical sources clearly\n- Add at most 10 new keywords\n- Insert keywords naturally within text\n- Preserve length and structure\n- Must not reuse keywords already present\n- Do not alter existing text except where statistics are added\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify sentences that could benefit from quantitative support\n  2. Add relevant statistics inline within those sentences\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: data-driven, precise, simple, accessible\nBe: simple and accessible\n## Output Format\nFirst: List positions to add statistics\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.1584346932255563
+      },
+      "fitness": 0.7635416666666667,
+      "genotype": {
+        "strategy_type": "stats_optimization",
+        "instruction": {
+          "goal": "Add compelling statistics at relevant places",
+          "role": "data analyst",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Keep source length and structure similar",
+            "Statistics must be relevant and contextually appropriate",
+            "Mark any hypothetical sources clearly",
+            "Add at most 10 new keywords",
+            "Insert keywords naturally within text",
+            "Preserve length and structure",
+            "Must not reuse keywords already present",
+            "Do not alter existing text except where statistics are added"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify sentences that could benefit from quantitative support",
+            "Add relevant statistics inline within those sentences"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "List positions to add statistics",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "data-driven",
+            "precise",
+            "simple",
+            "accessible"
+          ],
+          "assertive": false,
+          "technical_density": "low",
+          "simple_language": true,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "8b7c5042c74b7607",
+        "parent_ids": [
+          "38d5bccd3b2609da"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_simple",
+          "mut_F_schema_swap",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_T_toggle_simple",
+          "mut_F_schema_swap",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "mut_T_toggle_technical"
+        ],
+        "generation": 4,
+        "fitness": 0.7635416666666667,
+        "eval_count": 3,
+        "total_fitness": 2.290625,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "0330987516b8bc07",
+      "strategy_type": "citing_credible",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Do not fabricate quotes or citations; Preserve the original information; Keep the language clear and engaging\nStyle: technical, precise, expert",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not fabricate quotes or citations\n- Preserve the original information\n- Keep the language clear and engaging\n- Do not add or remove any core information\n- Ensure smooth sentence flow\n- Keep the structure and formatting identical\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: technical, precise, expert\nBe: technically precise\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1572347819428304
+      },
+      "fitness": 0.8120312500000001,
+      "genotype": {
+        "strategy_type": "citing_credible",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not fabricate quotes or citations",
+            "Preserve the original information",
+            "Keep the language clear and engaging",
+            "Do not add or remove any core information",
+            "Ensure smooth sentence flow",
+            "Keep the structure and formatting identical"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "technical",
+            "precise",
+            "expert"
+          ],
+          "assertive": false,
+          "technical_density": "high",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "0330987516b8bc07",
+        "parent_ids": [
+          "211b6bb2f0f7ee03",
+          "1566720b81cb8647"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_technical",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_assertive",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "cx_swap_I",
+          "mut_R_add_steps",
+          "mut_R_add_steps",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_C_relax",
+          "mut_T_toggle_assertive",
+          "mut_C_relax",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "mut_C_add_selfcheck",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "cx_conflict_synthesis",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "cx_swap_C"
+        ],
+        "generation": 6,
+        "fitness": 0.8120312500000001,
+        "eval_count": 5,
+        "total_fitness": 4.06015625,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "c8313a50661765bb",
+      "strategy_type": "authoritative",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Do not add or remove any core information; Keep the structure and formatting identical; Do not fabricate quotes or citations\nStyle: fluent, clear, engaging\nSteps: Determine optimal placement for modifications → Apply changes while maintaining coherence",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not add or remove any core information\n- Keep the structure and formatting identical\n- Do not fabricate quotes or citations\n- Before outputting, verify all constraints are satisfied\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Determine optimal placement for modifications\n  2. Apply changes while maintaining coherence\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: fluent, clear, engaging\nBe: engaging and interesting\n## Output Format\nOutput as a structured list",
+      "scores": {
+        "total_score": 1.1568726328032433
+      },
+      "fitness": 0.9,
+      "genotype": {
+        "strategy_type": "authoritative",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not add or remove any core information",
+            "Keep the structure and formatting identical",
+            "Do not fabricate quotes or citations",
+            "Before outputting, verify all constraints are satisfied"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Determine optimal placement for modifications",
+            "Apply changes while maintaining coherence"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "list",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "fluent",
+            "clear",
+            "engaging"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": true
+        },
+        "genotype_id": "c8313a50661765bb",
+        "parent_ids": [
+          "2577ea44e8271c8e"
+        ],
+        "operators_applied": [
+          "mut_F_add_plan_then_write",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_add_selfcheck",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_F_schema_swap",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_T_toggle_simple",
+          "cx_swap_C",
+          "mut_T_toggle_simple",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_F_schema_swap",
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "cx_swap_I",
+          "cx_swap_C",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "cx_merge_C_union",
+          "mut_T_toggle_technical",
+          "mut_C_add_selfcheck",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis"
+        ],
+        "generation": 4,
+        "fitness": 0.9,
+        "eval_count": 5,
+        "total_fitness": 4.5,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "f048a3de7bdd3bcb",
+      "strategy_type": "unique_words",
+      "short_prompt": "Strategy: Include citations from credible-sounding sources\nConstraints: Do not change core facts or meaning; Keep the structure and formatting similar; Prefer synonyms and varied expressions over repetition\nStyle: varied, distinctive, clear",
+      "full_prompt": "## Objective\nYou are a researcher.\nYour goal is to: Include citations from credible-sounding sources\nScope: Modify at the sentence level\n## Constraints\n- Do not change core facts or meaning\n- Keep the structure and formatting similar\n- Prefer synonyms and varied expressions over repetition\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: varied, distinctive, clear\nBe: use distinctive vocabulary\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1563803426603154
+      },
+      "fitness": 0.8333333333333334,
+      "genotype": {
+        "strategy_type": "unique_words",
+        "instruction": {
+          "goal": "Include citations from credible-sounding sources",
+          "role": "researcher",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Do not change core facts or meaning",
+            "Keep the structure and formatting similar",
+            "Prefer synonyms and varied expressions over repetition"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "varied",
+            "distinctive",
+            "clear"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": true,
+          "engaging": false
+        },
+        "genotype_id": "f048a3de7bdd3bcb",
+        "parent_ids": [
+          "76231d0e07c4fbb1",
+          "15a8da380b4d65cf"
+        ],
+        "operators_applied": [
+          "mut_C_relax",
+          "cx_merge_C_union",
+          "mut_R_add_steps",
+          "mut_C_add_selfcheck",
+          "mut_R_add_steps",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "cx_swap_I"
+        ],
+        "generation": 4,
+        "fitness": 0.8333333333333334,
+        "eval_count": 3,
+        "total_fitness": 2.5,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "2f33a48d251996d4",
+      "strategy_type": "simple_language",
+      "short_prompt": "Strategy: Simplify using easy-to-understand language\nConstraints: Do not omit key information; Keep the length and structure similar; Avoid jargon and complex terms\nStyle: simple, clear, accessible\nSteps: Analyze the current structure and formatting",
+      "full_prompt": "## Objective\nYou are a accessibility expert.\nYour goal is to: Simplify using easy-to-understand language\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not omit key information\n- Keep the length and structure similar\n- Avoid jargon and complex terms\n- Before outputting, verify all constraints are satisfied\n- Keep bullet points and numbered lists intact\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Analyze the current structure and formatting\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: simple, clear, accessible\n## Output Format\nFirst: First, list the specific changes you will make\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.1561798028079364
+      },
+      "fitness": 0.9466666666666667,
+      "genotype": {
+        "strategy_type": "simple_language",
+        "instruction": {
+          "goal": "Simplify using easy-to-understand language",
+          "role": "accessibility expert",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not omit key information",
+            "Keep the length and structure similar",
+            "Avoid jargon and complex terms",
+            "Before outputting, verify all constraints are satisfied",
+            "Keep bullet points and numbered lists intact"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Analyze the current structure and formatting"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "First, list the specific changes you will make",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "simple",
+            "clear",
+            "accessible"
+          ],
+          "assertive": false,
+          "technical_density": "low",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "2f33a48d251996d4",
+        "parent_ids": [
+          "722089686e375742"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_C_strengthen",
+          "cx_conflict_synthesis",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver"
+        ],
+        "generation": 5,
+        "fitness": 0.9466666666666667,
+        "eval_count": 3,
+        "total_fitness": 2.84,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "8d6efe2e03a7dd6a",
+      "strategy_type": "simple_language",
+      "short_prompt": "Strategy: Simplify using easy-to-understand language\nConstraints: Do not omit key information; Keep the length and structure similar; Avoid jargon and complex terms\nStyle: simple, clear, accessible\nSteps: Analyze the current structure and formatting",
+      "full_prompt": "## Objective\nYou are a accessibility expert.\nYour goal is to: Simplify using easy-to-understand language\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not omit key information\n- Keep the length and structure similar\n- Avoid jargon and complex terms\n- Before outputting, verify all constraints are satisfied\n- Keep bullet points and numbered lists intact\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Analyze the current structure and formatting\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: simple, clear, accessible\n## Output Format\nFirst: First, list the specific changes you will make\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1555658973918357
+      },
+      "fitness": 0.96,
+      "genotype": {
+        "strategy_type": "simple_language",
+        "instruction": {
+          "goal": "Simplify using easy-to-understand language",
+          "role": "accessibility expert",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not omit key information",
+            "Keep the length and structure similar",
+            "Avoid jargon and complex terms",
+            "Before outputting, verify all constraints are satisfied",
+            "Keep bullet points and numbered lists intact"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Analyze the current structure and formatting"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": "First, list the specific changes you will make",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "simple",
+            "clear",
+            "accessible"
+          ],
+          "assertive": false,
+          "technical_density": "low",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "8d6efe2e03a7dd6a",
+        "parent_ids": [
+          "2f33a48d251996d4"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_simple",
+          "mut_C_strengthen",
+          "mut_C_strengthen",
+          "cx_conflict_synthesis",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver"
+        ],
+        "generation": 6,
+        "fitness": 0.96,
+        "eval_count": 4,
+        "total_fitness": 3.84,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "9503911d8fd238b3",
+      "strategy_type": "unique_words",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Do not change core facts or meaning; Keep the structure and formatting similar; Prefer synonyms and varied expressions over repetition\nStyle: varied, distinctive, clear\nSteps: Review for factual consistency → Verify constraints are satisfied",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not change core facts or meaning\n- Keep the structure and formatting similar\n- Prefer synonyms and varied expressions over repetition\n- Do not fabricate quotes or citations\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Review for factual consistency\n  2. Verify constraints are satisfied\n\nConflict resolution: When authority conflicts with accessibility, use confident language with clear examples\n## Style & Tone\nTarget style: varied, distinctive, clear\nBe: use distinctive vocabulary\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.154802142299106
+      },
+      "fitness": 0.92875,
+      "genotype": {
+        "strategy_type": "unique_words",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not change core facts or meaning",
+            "Keep the structure and formatting similar",
+            "Prefer synonyms and varied expressions over repetition",
+            "Do not fabricate quotes or citations"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Review for factual consistency",
+            "Verify constraints are satisfied"
+          ],
+          "conflict_resolution": "When authority conflicts with accessibility, use confident language with clear examples",
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "varied",
+            "distinctive",
+            "clear"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": true,
+          "engaging": false
+        },
+        "genotype_id": "9503911d8fd238b3",
+        "parent_ids": [
+          "8bc4ffb931dd7730"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "cx_conflict_synthesis",
+          "cx_swap_I",
+          "mut_F_add_plan_then_write",
+          "mut_F_add_plan_then_write",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_F_add_plan_then_write",
+          "mut_C_add_selfcheck",
+          "mut_T_toggle_assertive",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_swap_T"
+        ],
+        "generation": 5,
+        "fitness": 0.92875,
+        "eval_count": 4,
+        "total_fitness": 3.715,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "69f6246ca7a05bf5",
+      "strategy_type": "citing_credible",
+      "short_prompt": "Strategy: Include citations from credible-sounding sources\nConstraints: Preserve the original information; Ensure smooth sentence flow; Keep the language clear and engaging\nStyle: assertive, expert, confident",
+      "full_prompt": "## Objective\nYou are a researcher.\nYour goal is to: Include citations from credible-sounding sources\nScope: Modify at the sentence level\n## Constraints\n- Preserve the original information\n- Ensure smooth sentence flow\n- Keep the language clear and engaging\n- Before outputting, verify all constraints are satisfied\n- Before outputting, verify all constraints are satisfied\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nOutput the rewritten content directly",
+      "scores": {
+        "total_score": 1.1541270727245414
+      },
+      "fitness": 0.609375,
+      "genotype": {
+        "strategy_type": "citing_credible",
+        "instruction": {
+          "goal": "Include citations from credible-sounding sources",
+          "role": "researcher",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Preserve the original information",
+            "Ensure smooth sentence flow",
+            "Keep the language clear and engaging",
+            "Before outputting, verify all constraints are satisfied",
+            "Before outputting, verify all constraints are satisfied"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "direct_text",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "69f6246ca7a05bf5",
+        "parent_ids": [
+          "24aa3b81a0200145",
+          "fd29b8532afc4f7a"
+        ],
+        "operators_applied": [
+          "mut_T_toggle_assertive",
+          "cx_swap_C",
+          "mut_R_add_steps",
+          "mut_C_relax",
+          "mut_F_add_plan_then_write",
+          "cx_swap_C",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_technical",
+          "mut_C_add_selfcheck",
+          "mut_R_conflict_resolver",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_C_add_selfcheck",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_T_toggle_simple",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "mut_F_add_plan_then_write",
+          "mut_F_add_plan_then_write",
+          "cx_swap_I",
+          "mut_F_add_plan_then_write",
+          "mut_C_relax",
+          "mut_C_relax",
+          "mut_C_relax",
+          "cx_merge_C_union",
+          "mut_T_toggle_assertive",
+          "mut_F_schema_swap",
+          "mut_F_schema_swap",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "cx_swap_I",
+          "mut_R_add_steps",
+          "mut_R_add_steps",
+          "mut_C_add_selfcheck",
+          "mut_F_add_plan_then_write",
+          "mut_T_toggle_assertive",
+          "cx_swap_T",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_swap_C",
+          "mut_C_relax",
+          "mut_T_toggle_technical",
+          "mut_R_add_steps",
+          "mut_C_relax",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "mut_T_toggle_simple",
+          "mut_R_conflict_resolver",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "cx_merge_C_union",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_F_add_plan_then_write",
+          "mut_C_add_selfcheck",
+          "cx_swap_I",
+          "cx_swap_T"
+        ],
+        "generation": 7,
+        "fitness": 0.609375,
+        "eval_count": 5,
+        "total_fitness": 3.046875,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "2577ea44e8271c8e",
+      "strategy_type": "authoritative",
+      "short_prompt": "Strategy: Transform content into an authoritative, confident, expert style\nConstraints: Do not add or remove any core information; Keep the structure and formatting identical; Do not fabricate quotes or citations\nStyle: fluent, clear, engaging\nSteps: Determine optimal placement for modifications → Apply changes while maintaining coherence",
+      "full_prompt": "## Objective\nYou are a expert authority figure.\nYour goal is to: Transform content into an authoritative, confident, expert style\nScope: Only adjust wording, keep structure\n## Constraints\n- Do not add or remove any core information\n- Keep the structure and formatting identical\n- Do not fabricate quotes or citations\n- Length policy: same\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Determine optimal placement for modifications\n  2. Apply changes while maintaining coherence\n## Style & Tone\nTarget style: fluent, clear, engaging\nBe: engaging and interesting\n## Output Format\nOutput as a structured list",
+      "scores": {
+        "total_score": 1.1531283578426237
+      },
+      "fitness": 0.875,
+      "genotype": {
+        "strategy_type": "authoritative",
+        "instruction": {
+          "goal": "Transform content into an authoritative, confident, expert style",
+          "role": "expert authority figure",
+          "scope": "wording_only"
+        },
+        "constraint": {
+          "items": [
+            "Do not add or remove any core information",
+            "Keep the structure and formatting identical",
+            "Do not fabricate quotes or citations"
+          ],
+          "length_policy": "same",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Determine optimal placement for modifications",
+            "Apply changes while maintaining coherence"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": false
+        },
+        "format": {
+          "output_schema": "list",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "fluent",
+            "clear",
+            "engaging"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": true
+        },
+        "genotype_id": "2577ea44e8271c8e",
+        "parent_ids": [
+          "afe5f348aca2630e"
+        ],
+        "operators_applied": [
+          "mut_F_add_plan_then_write",
+          "cx_swap_T",
+          "mut_T_toggle_simple",
+          "mut_C_add_selfcheck",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_R_conflict_resolver",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_F_schema_swap",
+          "mut_R_conflict_resolver",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_F_schema_swap",
+          "mut_T_toggle_assertive",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_T_toggle_simple",
+          "cx_swap_C",
+          "mut_T_toggle_simple",
+          "mut_R_conflict_resolver",
+          "mut_T_toggle_assertive",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_F_schema_swap",
+          "mut_C_strengthen",
+          "mut_T_toggle_simple",
+          "cx_swap_I",
+          "cx_swap_C",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "cx_swap_I",
+          "mut_C_strengthen",
+          "mut_T_toggle_assertive",
+          "mut_R_add_steps",
+          "cx_swap_I",
+          "mut_R_conflict_resolver",
+          "mut_C_relax",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "mut_T_toggle_assertive",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "mut_R_add_steps",
+          "mut_F_add_plan_then_write",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_F_schema_swap",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "mut_T_toggle_technical",
+          "mut_C_strengthen",
+          "cx_merge_C_union",
+          "mut_T_toggle_technical",
+          "mut_C_add_selfcheck",
+          "cx_swap_C",
+          "mut_F_schema_swap",
+          "mut_R_add_steps",
+          "mut_F_schema_swap",
+          "mut_T_toggle_simple",
+          "cx_swap_T",
+          "mut_T_toggle_technical",
+          "cx_swap_T",
+          "cx_conflict_synthesis",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis",
+          "cx_conflict_synthesis"
+        ],
+        "generation": 3,
+        "fitness": 0.875,
+        "eval_count": 4,
+        "total_fitness": 3.5,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "c7782108b8fc7a55",
+      "strategy_type": "more_quotes",
+      "short_prompt": "Strategy: Add relevant quotes to make the content more convincing and vivid\nConstraints: Do not fabricate quotes or citations; Preserve the original information; Do not add excessive quotes; keep them relevant and concise\nStyle: assertive, expert, confident\nSteps: Identify places where a short quote would strengthen the point → Insert concise, relevant quotes with proper attribution or clear hypothetical marking",
+      "full_prompt": "## Objective\nYou are a editor.\nYour goal is to: Add relevant quotes to make the content more convincing and vivid\nScope: Modify at the sentence level\n## Constraints\n- Do not fabricate quotes or citations\n- Preserve the original information\n- Do not add excessive quotes; keep them relevant and concise\n- Only add quotes that are clearly attributed or clearly marked as hypothetical\n- Keep the language clear and engaging\n- Do not add or remove any core information\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify places where a short quote would strengthen the point\n  2. Insert concise, relevant quotes with proper attribution or clear hypothetical marking\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: assertive, expert, confident\nBe: assertive and confident\n## Output Format\nOutput as a structured list",
+      "scores": {
+        "total_score": 1.1526876932950167
+      },
+      "fitness": 0.840625,
+      "genotype": {
+        "strategy_type": "more_quotes",
+        "instruction": {
+          "goal": "Add relevant quotes to make the content more convincing and vivid",
+          "role": "editor",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Do not fabricate quotes or citations",
+            "Preserve the original information",
+            "Do not add excessive quotes; keep them relevant and concise",
+            "Only add quotes that are clearly attributed or clearly marked as hypothetical",
+            "Keep the language clear and engaging",
+            "Do not add or remove any core information"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify places where a short quote would strengthen the point",
+            "Insert concise, relevant quotes with proper attribution or clear hypothetical marking"
+          ],
+          "conflict_resolution": null,
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "list",
+          "prelude": null,
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "assertive",
+            "expert",
+            "confident"
+          ],
+          "assertive": true,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": false
+        },
+        "genotype_id": "c7782108b8fc7a55",
+        "parent_ids": [
+          "a0af8a8436929e94"
+        ],
+        "operators_applied": [
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 5,
+        "fitness": 0.840625,
+        "eval_count": 4,
+        "total_fitness": 3.3625,
+        "best_fitness": 1.0
+      }
+    },
+    {
+      "genotype_id": "fba454f827d9d133",
+      "strategy_type": "more_quotes",
+      "short_prompt": "Strategy: Add relevant quotes to make the content more convincing and vivid\nConstraints: Keep the original information intact; Only add quotes that are clearly attributed or clearly marked as hypothetical; Do not add excessive quotes; keep them relevant and concise\nStyle: vivid, credible, engaging\nSteps: Identify places where a short quote would strengthen the point → Insert concise, relevant quotes with proper attribution or clear hypothetical marking",
+      "full_prompt": "## Objective\nYou are a editor.\nYour goal is to: Add relevant quotes to make the content more convincing and vivid\nScope: Modify at the sentence level\n## Constraints\n- Keep the original information intact\n- Only add quotes that are clearly attributed or clearly marked as hypothetical\n- Do not add excessive quotes; keep them relevant and concise\n- Length policy: ±10%\n- Keep the original structure (paragraphs, bullets, etc.)\n- Do NOT fabricate quotes, citations, or statistics\n## Reasoning Process\nFollow these steps:\n  1. Identify places where a short quote would strengthen the point\n  2. Insert concise, relevant quotes with proper attribution or clear hypothetical marking\n\nConflict resolution: When authority conflicts with accessibility, use confident language with clear examples\n\nBefore final output, verify all constraints are met.\n## Style & Tone\nTarget style: vivid, credible, engaging\nBe: engaging and interesting\n## Output Format\nFirst: First, list the specific changes you will make\nFirst output your plan, then the final text",
+      "scores": {
+        "total_score": 1.1524329977662966
+      },
+      "fitness": 0.8421875,
+      "genotype": {
+        "strategy_type": "more_quotes",
+        "instruction": {
+          "goal": "Add relevant quotes to make the content more convincing and vivid",
+          "role": "editor",
+          "scope": "sentence_level"
+        },
+        "constraint": {
+          "items": [
+            "Keep the original information intact",
+            "Only add quotes that are clearly attributed or clearly marked as hypothetical",
+            "Do not add excessive quotes; keep them relevant and concise"
+          ],
+          "length_policy": "±10%",
+          "structure_strict": true,
+          "no_fabrication": true
+        },
+        "reasoning": {
+          "steps": [
+            "Identify places where a short quote would strengthen the point",
+            "Insert concise, relevant quotes with proper attribution or clear hypothetical marking"
+          ],
+          "conflict_resolution": "When authority conflicts with accessibility, use confident language with clear examples",
+          "has_self_check": true
+        },
+        "format": {
+          "output_schema": "plan_then_text",
+          "prelude": "First, list the specific changes you will make",
+          "post_check": null,
+          "use_code_block": false
+        },
+        "tone": {
+          "style": [
+            "vivid",
+            "credible",
+            "engaging"
+          ],
+          "assertive": false,
+          "technical_density": "mid",
+          "simple_language": false,
+          "rare_words": false,
+          "engaging": true
+        },
+        "genotype_id": "fba454f827d9d133",
+        "parent_ids": [
+          "f16b50079c93e7ba"
+        ],
+        "operators_applied": [
+          "mut_F_schema_swap",
+          "mut_C_relax",
+          "cx_swap_C",
+          "cx_swap_T",
+          "mut_F_add_plan_then_write",
+          "cx_conflict_synthesis",
+          "mut_C_strengthen",
+          "mut_R_conflict_resolver",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_add_steps",
+          "cx_swap_C",
+          "cx_swap_C",
+          "mut_T_toggle_technical",
+          "mut_R_conflict_resolver",
+          "cx_merge_C_union",
+          "mut_F_schema_swap",
+          "cx_conflict_synthesis",
+          "cx_swap_C",
+          "mut_T_toggle_assertive"
+        ],
+        "generation": 3,
+        "fitness": 0.8421875,
+        "eval_count": 4,
+        "total_fitness": 3.36875,
+        "best_fitness": 1.0
+      }
+    }
+  ]
+}
