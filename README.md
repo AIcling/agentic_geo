@@ -6,8 +6,8 @@
 <td valign="top" width="50%">
 
 - 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (Generative Engine Optimization, GEO).
-- 🔧 **How**: Model GEO as **content‑conditioned control**, then use a **MAP‑Elites strategy archive** + **co‑evolving critic** for rewriting strategy selection and continual adaptation.
-- 🚀 **Why it matters**: Achieves strong effectiveness while reducing reliance on costly engine feedback.
+- 🔧 **How**: Model GEO as **content‑conditioned control**, then use a MAP‑Elites strategy archive + co‑evolving critic for rewriting strategy selection and continual adaptation.
+- 🚀 **Why it matters**: GEO often relies on an assumed globally-optimal fixed strategy; AgenticGEO learns a content-adaptive strategy selection polic via an evolving archive + critic, optmizing with fewer GE calls.
 
 </td>
 <td valign="top" width="50%">
