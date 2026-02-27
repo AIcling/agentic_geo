@@ -3,14 +3,14 @@
 
 <table width="100%">
 <tr>
-<td valign="top" width="50%">
+<td valign="top" width="55%">
 
 - 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (Generative Engine Optimization, GEO).
 - 🔧 **How**: Model GEO as **content‑conditioned control**, then use a MAP‑Elites strategy archive + co‑evolving critic for rewriting strategy selection and continual adaptation.
-- 🚀 **Why it matters**: AgenticGEO learns a content-adaptive strategy selection policy via an evolving archive + critic, optmizing with fewer GE calls.
+- 🚀 **Why it matters**: GEO often relies on an assumed globally-optimal fixed prompt; AgenticGEO learns a content-adaptive strategy selection policy, optmizing with fewer GE calls.
 
 </td>
-<td valign="top" width="50%">
+<td valign="top" width="45%">
 
 <p align="center">
   <img src="Figs/com.png" width="100%" style="max-width:100%;" alt="Vanilla GEO v.s. AgenticGEO"/>
