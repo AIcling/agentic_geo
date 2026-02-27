@@ -1,19 +1,19 @@
 # AgenticGEO: A Self‑Evolving Agentic System for Generative Engine Optimization
 
 
-<table>
+<table width="100%">
 <tr>
-<td valign="top">
+<td valign="top" width="50%">
 
 - 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (GEO).
 - 🔧 **How**: Model GEO as **content‑conditioned control**, then use a **MAP‑Elites strategy archive** + **co‑evolving critic** for rewriting strategy selection and continual adaptation.
 - 🚀 **Why it matters**: Achieves strong effectiveness while reducing reliance on costly engine feedback.
 
 </td>
-<td valign="top">
+<td valign="top" width="50%">
 
 <p align="center">
-  <img src="Figs/com.png" width="360" alt="Vanilla GEO v.s. AgenticGEO"/>
+  <img src="Figs/com.png" width="100%" style="max-width:100%;" alt="Vanilla GEO v.s. AgenticGEO"/>
 </p>
 
 </td>
