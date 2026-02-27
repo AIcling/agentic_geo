@@ -1,9 +1,48 @@
-# AgenticGEO: A Self-Evolving Agentic System for Generative Engine Optimization
+# AgenticGEO: A Self‑Evolving Agentic System for Generative Engine Optimization
+
+
+- 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (GEO).
+- 🔧 **How**: Model GEO as **content‑conditioned control**, then use a **MAP‑Elites strategy archive** + **co‑evolving critic** for rewriting strategy selection and continual adaptation.
+- 🚀 **Why it matters**: Achieves strong effectiveness while reducing reliance on costly engine feedback.
+
+<p align="center">
+  <img src="Figs/com.png" width="560" alt="Vanilla GEO v.s. AgenticGEO"/>
+</p>
 ---
+
+## ✨ Highlights
+
+- **Content‑conditioned GEO** under non‑stationary black‑box engines.
+- **Quality‑diversity strategy memory (MAP‑Elites)** for adaptive strategy selection.
+- **Co‑evolving critic** as a surrogate evaluator & inference‑time planner.
+- **Low feedback regime**: strong performance retained with limited GE calls (see paper).
 
 ---
 
-## Quickstart
+## 🧭 Overview
+
+<p align="center">
+  <img src="Figs/overview.png" width="800" alt="AgenticGEO overview"/>
+</p>
+
+AgenticGEO consists of three stages:
+
+1. **Offline Critic Alignment**: warm‑start a lightweight critic using offline preference pairs.
+2. **Online Strategy–Critic Co‑Evolution**: co‑evolve a MAP‑Elites archive and continuously recalibrate the critic with limited GE feedback.
+3. **Inference‑time Multi‑turn Rewriting**: critic‑guided planning selects a content‑adaptive sequence of strategies.
+
+---
+
+## 📏 Metrics
+
+We use GEO‑Bench impression metrics:
+- **Attributed Word Count (word)**
+- **Position‑Weighted Citation Order (pos)**
+- **Overall** (combination of word & pos)
+
+---
+
+## 🚀 Quickstart
 
 ### 1) Install dependencies
 
@@ -51,9 +90,9 @@ The repo reads OpenAI-compatible settings from `config.ini` (or environment vari
 
 ---
 
-## Run inference / evaluation
+### 5) Run evaluation
 
-### Required environment variables (minimal)
+#### Required environment variables (minimal)
 
 ```powershell
 # Dataset type and split
@@ -64,7 +103,7 @@ $env:DATASET_SPLIT = "test"       # train | test | val
 $env:EVOLVED_BASE_MODEL = "E:\AICling\agentic_geo\base_model"
 ```
 
-### Critic & strategies (auto-loaded from `evolved/` by default)
+#### Critic & strategies (auto-loaded from `evolved/` by default)
 
 No extra weights are required by default; `src/run_geo.py` will auto-load:
 
@@ -88,7 +127,7 @@ If you want to override any of them, set these **optional** environment variable
 # $env:EVOLVED_PRETRAINED_BACKBONE = "E:\path\to\pytorch_model.bin"
 ```
 
-### Concurrency & cache (optional)
+#### Concurrency & cache (optional)
 
 ```powershell
 $env:USE_CONCURRENT = "True"
@@ -98,7 +137,7 @@ $env:MAX_WORKERS    = "10"
 # $env:GLOBAL_CACHE_FILE = "E:\AICling\agentic_geo\src\global_cache.json"
 ```
 
-### Run
+#### Run
 
 ```bash
 python src/run_geo.py
@@ -106,7 +145,7 @@ python src/run_geo.py
 
 ---
 
-## Output
+#### Output
 
 The script prints the final output path. Results are saved under `src/results/` with a filename like:
 
@@ -116,3 +155,37 @@ Where `{model}` comes from:
 
 - `LOCAL_LLM_MODEL` in `config.ini` (when `USE_LOCAL_LLM=True`), or
 - env var `MODEL_NAME` (when `USE_LOCAL_LLM=False`)
+
+## 🧪 Reproducibility (paper setting)
+
+- Critic backbone: **Qwen2.5‑1.5B**
+- Evolver: **Qwen2.5‑7B‑Instruct**
+- Rewriter tool model: **Qwen2.5‑32B‑Instruct**
+- Downstream GEs: **Qwen2.5‑32B‑Instruct / Llama‑3.3‑70B‑Instruct**
+- Fine‑tuning: LoRA, 2 epochs
+- Inference: select **top‑25** strategies, up to **3** rewrite steps
+
+---
+
+<!-- ## 📝 Citation
+
+```bibtex
+@article{agenticgeo2026,
+  title   = {AgenticGEO: A Self-Evolving Agentic System for Generative Engine Optimization},
+  author  = {Anonymous},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}
+```
+
+--- -->
+## 🪪 License
+
+This project is released under the **MIT License**. See `LICENSE`.
+
+---
+
+## 🙏 Acknowledgements
+
+We thank the GEO‑Bench and AutoGEO authors and the open‑source LLM ecosystem.
+
