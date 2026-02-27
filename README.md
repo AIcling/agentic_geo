@@ -6,7 +6,7 @@
 - 🚀 **Why it matters**: Achieves strong effectiveness while reducing reliance on costly engine feedback.
 
 <p align="center">
-  <img src="Figs/com.png" width="560" alt="Vanilla GEO v.s. AgenticGEO"/>
+  <img src="Figs/com.png" width="360" alt="Vanilla GEO v.s. AgenticGEO"/>
 </p>
 ---
 
