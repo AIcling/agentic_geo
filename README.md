@@ -5,7 +5,7 @@
 <tr>
 <td valign="top" width="50%">
 
-- 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (GEO).
+- 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (Generative Engine Optimization, GEO).
 - 🔧 **How**: Model GEO as **content‑conditioned control**, then use a **MAP‑Elites strategy archive** + **co‑evolving critic** for rewriting strategy selection and continual adaptation.
 - 🚀 **Why it matters**: Achieves strong effectiveness while reducing reliance on costly engine feedback.
 
