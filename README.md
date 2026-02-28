@@ -1,21 +1,24 @@
 # AgenticGEO: A Self‑Evolving Agentic System for Generative Engine Optimization
-
 > 🤖 **Content-adaptive GEO in one click: multi-turn rewriting with minimal feedback.**
 
-|     |
-| --- |
-|     |
-
+<table width="100%">
+<tr>
+<td valign="top" width="50%">
 
 - 🧩 **What**: Optimize document *visibility & attribution* in black‑box generative search engines (Generative Engine Optimization, GEO).
-- 🔧 **How**: Model GEO as **content‑conditioned problem**, then evolve a MAP‑Elites strategy archive + co‑evolving critic for rewriting strategy selection.
+- 🔧 **How**: Model GEO as **content‑conditioned problem**, then train a MAP‑Elites strategy archive + co‑evolving critic for rewriting strategy selection.
 - 🚀 **Why it matters**: GEO often relies on an assumed globally-optimal fixed prompt; AgenticGEO learns a content-adaptive strategy selection policy, optmizing with fewer GE calls.
 
+</td>
+<td valign="top" width="50%">
 
+<p align="center">
+  <img src="Figs/com.png" width="100%" style="max-width:100%;" alt="Vanilla GEO v.s. AgenticGEO"/>
+</p>
 
-
-
-
+</td>
+</tr>
+</table>
 
 ---
 
@@ -30,7 +33,9 @@
 
 ## 🧭 Overview
 
-
+<p align="center">
+  <img src="Figs/overview.png" width="800" alt="AgenticGEO overview"/>
+</p>
 
 AgenticGEO consists of three stages:
 
@@ -43,7 +48,6 @@ AgenticGEO consists of three stages:
 ## 📏 Metrics
 
 We use [GEO‑Bench](https://github.com/GEO-optim/GEO) impression metrics:
-
 - **Attributed Word Count (word)**
 - **Position‑Weighted Citation Order (pos)**
 - **Overall** (combination of word & pos)
@@ -70,7 +74,7 @@ python base_model/download_base_model.py
 
 `src/run_geo.py` reads sources from `src/global_cache.json`. Preloading avoids missing sources at runtime.
 
-- **GEO-Bench**:
+- **GEO-Bench** ([GEO-optim/GEO](https://github.com/GEO-optim/GEO)):
 
 ```bash
 python src/preload_cache_from_geobench.py
@@ -91,6 +95,7 @@ The repo reads OpenAI-compatible settings from `config.ini` (or environment vari
     - `USE_LOCAL_LLM = True`
     - `LOCAL_LLM_BASE = http://localhost:8000/v1`
     - `LOCAL_LLM_MODEL = <your served model name>`
+
 - **Using OpenAI or a hosted compatible provider**:
   - Set `USE_LOCAL_LLM = False` and provide `OPENAI_API_KEY` / `OPENAI_API_BASE` in `config.ini`
   - You can also override via environment variables (recommended for CI/servers)
@@ -174,8 +179,18 @@ Where `{model}` comes from:
 
 ---
 
+<!-- ## 📝 Citation
 
+```bibtex
+@article{agenticgeo2026,
+  title   = {AgenticGEO: A Self-Evolving Agentic System for Generative Engine Optimization},
+  author  = {Anonymous},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}
+```
 
+--- -->
 ## 🪪 License
 
 This project is released under the **MIT License**. See `LICENSE`.
@@ -185,3 +200,4 @@ This project is released under the **MIT License**. See `LICENSE`.
 ## 🙏 Acknowledgements
 
 We thank the [GEO‑Bench](https://github.com/GEO-optim/GEO) authors and the open‑source LLM ecosystem.
+
