@@ -47,7 +47,7 @@ AgenticGEO consists of three stages:
 
 ## 📏 Metrics
 
-We use GEO‑Bench impression metrics:
+We use [GEO‑Bench](https://github.com/GEO-optim/GEO) impression metrics:
 - **Attributed Word Count (word)**
 - **Position‑Weighted Citation Order (pos)**
 - **Overall** (combination of word & pos)
@@ -199,5 +199,5 @@ This project is released under the **MIT License**. See `LICENSE`.
 
 ## 🙏 Acknowledgements
 
-We thank the GEO‑Bench and AutoGEO authors and the open‑source LLM ecosystem.
+We thank the [GEO‑Bench](https://github.com/GEO-optim/GEO) authors and the open‑source LLM ecosystem.
 
