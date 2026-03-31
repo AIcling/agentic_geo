@@ -1,4 +1,4 @@
-# AgenticGEO: A Self‑Evolving Agentic System for Generative Engine Optimization
+# AgenticGEO: A Self‑Evolving Agentic System for Generative Engine Optimization ([Paper](https://arxiv.org/pdf/2603.20213v1))
 > 🤖 **Content-adaptive GEO in one click: multi-turn rewriting with minimal feedback.**
 
 <table width="100%">
